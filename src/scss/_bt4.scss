@@ -1,0 +1,151 @@
+.container {
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+.layout1 {
+    background-color: #e4e5e6;
+    margin-bottom: 100px;
+    .container {
+        background-color: #e4e5e6;
+        .row {
+            margin-left: -$gutter/2;
+            margin-right: -$gutter/2;
+            display: flex;
+            flex-wrap: wrap;
+            .content {
+                padding: $gutter/2;
+                width: 100%/$col1;
+                &-item {
+                    border: 1px solid #c8ced3;
+                    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+                    background-color: white;
+                    transition: box-shadow .5s, transform .5s;
+                    &:hover {
+                        transform: translate(0px,-5px);
+                        // tranlate (mov-right :px, mov-down :px)
+                        box-shadow: 0px 0px 10px 5px #c8ced3;
+                    }
+                }
+                &-type {
+                    text-align: left;
+                    padding: 15px 10px;
+                    span {
+                        font-size: 10px;
+                        font-weight: bolder;
+                        padding: 2px 6px;
+                        border-radius: 10px;
+                        color: #fff;
+                        background-color: #4dbd74;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: darken($color: #4dbd74, $amount: 10);
+                        }
+                    }
+                }
+                &-img {
+                    width: 100%;
+                }
+                &-header {
+                    padding: 10px 10px 0px;
+                    a {
+                        color: #20a8d8;
+                        &:hover {
+                            color: darken($color: #20a8d8, $amount: 10);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                &-date {
+                    padding: 0px 10px;
+                    color: rgba(gray, 0.8);
+                    font-size: 14px;
+                    font-style: italic;
+                }
+
+                &-descrip {
+                    padding: 10px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.layout2 {
+    background-color: #e4e5e6;
+    margin-bottom: 50px;
+    .container {
+        padding: 20px 0px;
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            .item {
+                width: 100%/$col2;
+                padding: $gutter2/2;
+                &-content {
+                    padding-bottom: 15px;
+                    background-color: white;
+                    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
+                    
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: 0px 0px 10px 5px #c8ced3;
+                    }
+                }
+                &-img {
+                    width: 100%;
+                    height: 240px;
+
+                }
+                &-title {
+                    overflow: hidden;
+                    font-size: 14px;
+                    font-weight: lighter;
+                    padding: 10px;
+                    height: 50px;
+                }
+                &-price {
+                    font-weight: lighter;
+                    color: orangered;
+                    padding: 0px 10px;
+                    &-del {
+                        text-decoration: line-through;
+                        color: rgba(gray, 0.8);
+                        padding: 5px 10px;
+                        padding-right: 0px;
+                        font-size: 12px;
+                    }
+                    &-discount {
+                        font-size: 12px;
+                    }
+                }
+                &-bottom {
+                    width: 100%;
+                    font-size: 12px;
+                    padding-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    .rating {
+                        width: 100%;
+                        padding: 0px 10px;
+                        span, .unchk {
+                            color: rgba(gray, 0.8);
+                        }
+                        .fa {
+                            color: orange;
+                        }
+                        
+                    }
+                    .location {
+                        padding-right: 5px;
+                        text-align: right;
+                        width: 60%;
+                        color: rgba(gray, 0.8);
+                    }
+                }
+            }
+        }
+    }
+}

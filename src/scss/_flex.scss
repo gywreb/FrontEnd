@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    // justify-content: flex-start; //default (left)
+    // justify-content: flex-end; //right
+    justify-content: space-between;
+    // justify-content: space-around;
+    align-items: center;
+    background: cyan;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav p{
+    margin-left: 20px;
+    color: white;
+}
+
+.nav p:hover {
+    background: black;
+}

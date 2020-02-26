@@ -1,0 +1,106 @@
+.footer {
+    width: 50%;
+    display: flex;
+    background:#111;
+    justify-content: space-between;
+}
+.f-quicklinks {
+    width: 40%;
+    padding: 20px;
+    padding-left: 10px;
+}
+.f-about {
+    width: 60%;
+    padding: 20px;
+    padding-right: 15px;
+}
+.header{
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: thin solid #666;
+}
+.f-hyperlink {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.f-about p{
+    padding-top: 20px;
+    color: #666;
+}
+.f-quicklinks a {
+    color: #666;
+}
+
+.f-quicklinks li {
+    margin-bottom: 10px;
+}
+
+//layout web
+
+.layout {
+    margin: 100px 300px;
+}
+
+.box {
+    background: #d1cfcf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.box p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+.l-logo {
+    height: 100px;
+}
+
+.l-header {
+    height: 200px;
+}
+
+.l-about-ql {
+    display: flex;
+}
+
+.l-about {
+    height: 500px;
+    width: 60%;
+}
+.l-ql {
+    width: 40%;
+    margin-left: 30px;
+}
+.ql1 {
+    height: 200px;
+}
+
+.ql2 {
+    height: 270px;
+}
+
+.l-nav ul {
+    display: flex;
+}
+
+.l-nav ul li {
+    height: 50px;
+    width: 40%;
+}
+
+.l-info {
+    height: 200px;
+}
+
+
